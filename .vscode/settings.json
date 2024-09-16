@@ -56,5 +56,8 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "SheepClicker.sln"
+    "dotnet.defaultSolution": "SheepClicker.sln",
+    "cSpell.words": [
+        "Datas"
+    ]
 }

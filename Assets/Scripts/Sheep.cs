@@ -57,6 +57,8 @@ public class Sheep : MonoBehaviour
         var wool = Instantiate(woolPrefab, transform.position, transform.rotation);
 
         // TODO: Woolオブジェクトに今回刈り取った羊毛を渡す
+        wool.price = shavingWool;
+        wool.woolColor = sheepData.color;
     }
 
     private void OnMouseOver()

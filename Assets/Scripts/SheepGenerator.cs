@@ -6,8 +6,9 @@ public class SheepGenerator : MonoBehaviour {
     [SerializeField]
     private Sheep sheepPrefab;
 
-    public void CreateSheep() {
+    public void CreateSheep(SheepData sheepData) {
         var sheep = Instantiate(sheepPrefab);
+        sheep.sheepData = sheepData;
     }
 
     // Start is called before the first frame update
@@ -16,9 +17,9 @@ public class SheepGenerator : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.S)) {
-            CreateSheep();
-        }
-    }
+    // void Update() {
+    //     if (Input.GetKeyDown(KeyCode.S)) {
+    //         CreateSheep();
+    //     }
+    // }
 }
