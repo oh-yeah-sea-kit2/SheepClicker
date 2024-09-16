@@ -53,12 +53,14 @@ public class Sheep : MonoBehaviour
         if (woolCount <= 0) {
             sheepRenderer.sprite = cutSheepSprite;
             sheepRenderer.color = Color.white;
+            SoundManager.Instance.Play("メー");
         }
         var wool = Instantiate(woolPrefab, transform.position, transform.rotation);
 
-        // TODO: Woolオブジェクトに今回刈り取った羊毛を渡す
+        // Woolオブジェクトに今回刈り取った羊毛を渡す
         wool.price = shavingWool;
         wool.woolColor = sheepData.color;
+        SoundManager.Instance.Play("刈り取り");
     }
 
     private void OnMouseOver()

@@ -38,6 +38,7 @@ public class SheepButton : MonoBehaviour {
         var price = GetPrice();
         wallet.money -= price;
         currentCount++;
+        SoundManager.Instance.Play("メー");
     }
 
 

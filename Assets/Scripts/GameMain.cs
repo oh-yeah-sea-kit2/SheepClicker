@@ -15,6 +15,7 @@ public class GameMain : MonoBehaviour {
         foreach (var wool in wools) {
             wool.Sell(wallet);
         }
+        SoundManager.Instance.Play("ボタン");
     }
 
     // Start is called before the first frame update

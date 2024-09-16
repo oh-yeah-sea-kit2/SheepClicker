@@ -25,6 +25,7 @@ public class Coin : MonoBehaviour {
         if (v.magnitude < 0.5f) {
             wallet.money += value;
             Destroy(gameObject);
+            SoundManager.Instance.Play("コイン");
         }
     }
 }
