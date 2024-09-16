@@ -10,9 +10,14 @@ public class Wool : MonoBehaviour {
     [SerializeField]
     private SpriteRenderer woolSpriteRenderer;
     public Color woolColor;
+    [SerializeField]
+    private Coin coinPrefab;
 
     public void Sell(Wallet wallet) {
-        wallet.money += price;
+        var coin = Instantiate(coinPrefab, transform.position, transform.rotation);
+        coin.value = price;
+        coin.wallet = wallet;
+
         Destroy(gameObject);
     }
 

@@ -103,6 +103,7 @@ MonoBehaviour:
   price: 100
   woolSpriteRenderer: {fileID: 4283510845827860927}
   woolColor: {r: 1, g: 1, b: 1, a: 0}
+  coinPrefab: {fileID: 4813061055827970713, guid: fb9d613314a3f40a3843ebf605a445fc, type: 3}
 --- !u!50 &8455676768106865053
 Rigidbody2D:
   serializedVersion: 4
